@@ -14,7 +14,9 @@ class Anasayfa: UIViewController {
 
     var todoListesi = [Todo]() //Todo.swift icerisinde tanimladigimiz class adi "Todo"
 
-    
+    var viewModel = AnasayfaViewModel()
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,12 +24,16 @@ class Anasayfa: UIViewController {
         todoTableView.dataSource = self //self dememizin sebebi anasayfa
         todoTableView.delegate = self
 
+        _ = viewModel.todoListesi.subscribe(onNext: { liste in
+            self.todoListesi = liste
+            self.todoTableView.reloadData()
 
-        let t1 = Todo(todo_id: 1, todo_mesaj:"Study Swift")
-        let t2 = Todo(todo_id: 2, todo_mesaj:"Go to GYM")
-        todoListesi.append(t1)
-        todoListesi.append(t2)
+        })
 
+    }
+
+    override func viewWillAppear(_ animated: Bool) { //sayfa her gorundugu an
+        viewModel.TodoYukle()
     }
 
 
@@ -47,7 +53,7 @@ class Anasayfa: UIViewController {
 
 extension Anasayfa : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print("Gorev ara : \(searchText)")
+        viewModel.ara(aramaKelimesi: searchText)
     }
 
 }
@@ -62,7 +68,7 @@ extension Anasayfa : UITableViewDelegate, UITableViewDataSource {
         let todo = todoListesi[indexPath.row] //sirayla todo listesine erisecegiz
 
         let hucre = tableView.dequeueReusableCell(withIdentifier: "todoHucre") as! TodoHucre
-        hucre.labelTodoMesaj.text = todo.todo_mesaj
+        hucre.labelTodoMesaj.text = todo.name
         return hucre
     }
 
@@ -82,7 +88,7 @@ extension Anasayfa : UITableViewDelegate, UITableViewDataSource {
             alert.addAction(iptalAction)
 
             let evetAction = UIAlertAction(title: "Yes", style: .destructive) { action in
-                print("Delete: \(todo.todo_id!)")
+                self.viewModel.sil(id :todo.id!)
             }
             alert.addAction(evetAction)
 

@@ -10,6 +10,9 @@ import UIKit
 class TodoKayit: UIViewController {
 
     @IBOutlet weak var tfTodo: UITextField!
+
+    var viewModel = TodoKayitViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,13 +23,10 @@ class TodoKayit: UIViewController {
     @IBAction func kayitTodo(_ sender: Any) {
 
         if let td = tfTodo.text {
-            kaydet(whats_up: td)
+            viewModel.kaydet(whats_up: td)
 
         }
     }
-//once fonksiyonu yazdim. 
-    func kaydet (whats_up :  String){
-        print("todo kaydet : \(whats_up)")
-    }
+
 }
 

@@ -3,17 +3,17 @@ import Foundation
 
 class Todo {
 
-    var todo_id : Int?
-    var todo_mesaj : String?
+    var id : Int?
+    var name : String?
 
     init(){
 
 
     }
 
-    init(todo_id: Int, todo_mesaj: String) {
-        self.todo_id = todo_id
-        self.todo_mesaj = todo_mesaj
+    init(id: Int, name: String) {
+        self.id = id
+        self.name = name
     }
 
 }
