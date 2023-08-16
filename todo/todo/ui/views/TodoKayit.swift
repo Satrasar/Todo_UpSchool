@@ -23,7 +23,7 @@ class TodoKayit: UIViewController {
     @IBAction func kayitTodo(_ sender: Any) {
 
         if let td = tfTodo.text {
-            viewModel.kaydet(whats_up: td)
+            viewModel.kaydet(name: td)
 
         }
     }

@@ -10,8 +10,8 @@ import Foundation
 class TodoKayitViewModel{
     var krepo = TodoDaoRepository()
 
-    func kaydet (whats_up :  String){
-        krepo.kaydet(whats_up: whats_up)
+    func kaydet (name :  String){
+       krepo.kaydet(name: name)
 
     }
 }

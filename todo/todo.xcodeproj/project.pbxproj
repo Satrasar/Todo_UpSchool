@@ -25,6 +25,12 @@
 		E98690392A79806B00560B77 /* todoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98690382A79806B00560B77 /* todoUITestsLaunchTests.swift */; };
 		E986904B2A79822400560B77 /* TodoKayit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986904A2A79822300560B77 /* TodoKayit.swift */; };
 		E986904D2A79823900560B77 /* TodoDetay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986904C2A79823900560B77 /* TodoDetay.swift */; };
+		E9BBF1222A8D0BE6008DD8D7 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BBF1182A8D0BE6008DD8D7 /* FMDatabase.m */; };
+		E9BBF1232A8D0BE6008DD8D7 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BBF1192A8D0BE6008DD8D7 /* FMDatabaseAdditions.m */; };
+		E9BBF1242A8D0BE6008DD8D7 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BBF11A2A8D0BE6008DD8D7 /* FMDatabasePool.m */; };
+		E9BBF1252A8D0BE6008DD8D7 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BBF11D2A8D0BE6008DD8D7 /* FMDatabaseQueue.m */; };
+		E9BBF1262A8D0BE6008DD8D7 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BBF11E2A8D0BE6008DD8D7 /* FMResultSet.m */; };
+		E9BBF12A2A8D0C94008DD8D7 /* todo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E9BBF1292A8D0C94008DD8D7 /* todo.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +72,20 @@
 		E98690382A79806B00560B77 /* todoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E986904A2A79822300560B77 /* TodoKayit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoKayit.swift; sourceTree = "<group>"; };
 		E986904C2A79823900560B77 /* TodoDetay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetay.swift; sourceTree = "<group>"; };
+		E9BBF1162A8D0BE5008DD8D7 /* todo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "todo-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9BBF1172A8D0BE6008DD8D7 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		E9BBF1182A8D0BE6008DD8D7 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		E9BBF1192A8D0BE6008DD8D7 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		E9BBF11A2A8D0BE6008DD8D7 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		E9BBF11B2A8D0BE6008DD8D7 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		E9BBF11C2A8D0BE6008DD8D7 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		E9BBF11D2A8D0BE6008DD8D7 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		E9BBF11E2A8D0BE6008DD8D7 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		E9BBF11F2A8D0BE6008DD8D7 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		E9BBF1202A8D0BE6008DD8D7 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		E9BBF1212A8D0BE6008DD8D7 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		E9BBF1282A8D0C1A008DD8D7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E9BBF1292A8D0C94008DD8D7 /* todo.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = todo.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +147,7 @@
 				E986902B2A79806B00560B77 /* todoTests */,
 				E98690352A79806B00560B77 /* todoUITests */,
 				E98690132A79806600560B77 /* Products */,
+				E9BBF1272A8D0C1A008DD8D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,8 +170,21 @@
 				E986901E2A79806B00560B77 /* Assets.xcassets */,
 				E98690202A79806B00560B77 /* LaunchScreen.storyboard */,
 				E98690232A79806B00560B77 /* Info.plist */,
+				E9BBF1212A8D0BE6008DD8D7 /* FMDatabase.h */,
+				E9BBF1182A8D0BE6008DD8D7 /* FMDatabase.m */,
+				E9BBF11B2A8D0BE6008DD8D7 /* FMDatabaseAdditions.h */,
+				E9BBF1192A8D0BE6008DD8D7 /* FMDatabaseAdditions.m */,
+				E9BBF1172A8D0BE6008DD8D7 /* FMDatabasePool.h */,
+				E9BBF11A2A8D0BE6008DD8D7 /* FMDatabasePool.m */,
+				E9BBF1202A8D0BE6008DD8D7 /* FMDatabaseQueue.h */,
+				E9BBF11D2A8D0BE6008DD8D7 /* FMDatabaseQueue.m */,
+				E9BBF11F2A8D0BE6008DD8D7 /* FMDB.h */,
+				E9BBF11C2A8D0BE6008DD8D7 /* FMResultSet.h */,
+				E9BBF11E2A8D0BE6008DD8D7 /* FMResultSet.m */,
+				E9BBF1292A8D0C94008DD8D7 /* todo.sqlite */,
 				E98690452A79812F00560B77 /* ui */,
 				E98690472A79814900560B77 /* data */,
+				E9BBF1162A8D0BE5008DD8D7 /* todo-Bridging-Header.h */,
 			);
 			path = todo;
 			sourceTree = "<group>";
@@ -215,6 +249,14 @@
 				E97DF24E2A7D69A60074831C /* Todo.swift */,
 			);
 			path = entitiy;
+			sourceTree = "<group>";
+		};
+		E9BBF1272A8D0C1A008DD8D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9BBF1282A8D0C1A008DD8D7 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +330,7 @@
 				TargetAttributes = {
 					E98690112A79806600560B77 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 					E98690272A79806B00560B77 = {
 						CreatedOnToolsVersion = 15.0;
@@ -328,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E98690222A79806B00560B77 /* LaunchScreen.storyboard in Resources */,
+				E9BBF12A2A8D0C94008DD8D7 /* todo.sqlite in Resources */,
 				E986901F2A79806B00560B77 /* Assets.xcassets in Resources */,
 				E986901D2A79806600560B77 /* Main.storyboard in Resources */,
 			);
@@ -357,12 +401,17 @@
 				E986901A2A79806600560B77 /* Anasayfa.swift in Sources */,
 				E986904D2A79823900560B77 /* TodoDetay.swift in Sources */,
 				E98690162A79806600560B77 /* AppDelegate.swift in Sources */,
+				E9BBF1222A8D0BE6008DD8D7 /* FMDatabase.m in Sources */,
 				E926BD762A87DF920051F34B /* TodoDetayViewModel.swift in Sources */,
+				E9BBF1252A8D0BE6008DD8D7 /* FMDatabaseQueue.m in Sources */,
+				E9BBF1262A8D0BE6008DD8D7 /* FMResultSet.m in Sources */,
 				E97DF24F2A7D69A60074831C /* Todo.swift in Sources */,
 				E926BD6F2A87DD940051F34B /* TodoDaoRepository.swift in Sources */,
 				E926BD742A87DF7A0051F34B /* TodoKayitViewModel.swift in Sources */,
+				E9BBF1232A8D0BE6008DD8D7 /* FMDatabaseAdditions.m in Sources */,
 				E926BD722A87DF630051F34B /* AnasayfaViewModel.swift in Sources */,
 				E97DF24D2A7D49E00074831C /* TodoHucre.swift in Sources */,
+				E9BBF1242A8D0BE6008DD8D7 /* FMDatabasePool.m in Sources */,
 				E986904B2A79822400560B77 /* TodoKayit.swift in Sources */,
 				E98690182A79806600560B77 /* SceneDelegate.swift in Sources */,
 			);
@@ -544,6 +593,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5VAN5DB9BB;
@@ -562,6 +612,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ozlemkumtas.todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "todo/todo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -572,6 +624,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5VAN5DB9BB;
@@ -590,6 +643,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ozlemkumtas.todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "todo/todo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
